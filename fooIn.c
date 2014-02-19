@@ -1,15 +1,18 @@
+#include<stdio.h>
 #include"fooIn.h"
+
  int fooIn( struct Librery *book )
 
 {
 int i;
 char tChar;
-	for(i = 0; i != kilk; ++i )
-	
+	for(i = 0; i != KILK; ++i )
 	{
-	;// book [ i ].lAutor = tChar;
+
+	printf("Hllpo JFHJ\n ");
+
 	}
 
-return kilk;
+return i;
 
 }

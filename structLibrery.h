@@ -3,6 +3,7 @@
 
 #define SYMBOL 30
 #define COMIT 300
+#define KILK 4
 
 struct Librery
 
