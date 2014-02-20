@@ -1,4 +1,5 @@
 #include"structLibrery.h"
-#define kilk 4
-struct Librery *book [ kilk ];
+struct Librery book [ KILK ];
+struct Librery *pbook = book;
+
 
