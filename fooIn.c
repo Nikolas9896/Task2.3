@@ -1,48 +1,44 @@
 #include<stdio.h>
-//#include<string.h>
 #include"fooIn.h"
-//#include"getline.h"
+
  int fooIn( struct Librery *pbook )
 
 {
- int i;
- char tChar1[ BOO_SYMB ];
- char *pBoo;
- const char enter = '\n';
- const char empty0 = '\0';
-
-	for( i = 0; i != KILK; ++i )
+    int i;
+    for( i = ZERO; i != KILK4; ++i )
 	
 	{
-	 //Autor
-        printf("Please, enter autor name and surname :\n");
+      //Number
+        pbook->lNum = i + ONE;
+
+
+     //Autor
+        printf("Please, enter autor name and surname for %d book :\n", pbook -> lNum );
         scanf( "%s %s", pbook -> lAutNam, pbook -> lAutSur );
         scanf( "%*c" );
-        printf( "Enter book which wrote %s %s :",  pbook -> lAutNam, pbook -> lAutSur  );
-        //scanf( "%s", pbook -> lBooNam );
-       // scanf("%['/n']",pbook -> lBooNam);
+
 
      //Book
-     //*pBoo = pbook->lBooNam;
-      scanf("%[^\n]", pbook -> lBooNam);
+      printf( "Enter book which wrote %s %s :",  pbook -> lAutNam, pbook -> lAutSur  );
+      scanf("%[^\n]", pbook -> lBooNam );
       scanf( "%*c" );
       printf("%s\n", pbook -> lBooNam );
 
 
-     // Year
-      printf("Enter year created of book : \n");
+     //Year of creation
+      printf("Enter year creation of book : \n");
       scanf("%d", &(*pbook).lYear);
       scanf( "%*c" );
       printf("Year: %d\n", pbook -> lYear);
 
-     //Commit
-   // *pBoo = pbook -> lComment;
-    // printf("Write your comment about the book: \n");
-   //  gets(tChar1);
+     //Comment about book
+      printf("Enter your coment : \n");
+      scanf( "%[^\n]", pbook -> lComent );
+      scanf( "%*c" );
+      printf( "%s\n", pbook -> lComent );
+
+      //next one
      ++pbook;
-     //tChar1 = 32;
-//getline() get.char putgets gets;
 	}
  return i;
-
 }
