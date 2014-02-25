@@ -5,17 +5,19 @@
 
 {
   int i;
-  printf("Books in alfabetic numeretion\n");
+  printf( "\n\n\n\n\nBooks in alfabetic numeretion by autor surname: \n" );
+
+
     for( i = ZERO; i != KILK4; ++i )
 
     {
-
+        pbook -> lNum = i + ONE;
         printf("%d. %s %s\t\" %s \"\t %d \tcomment: %s \n", pbook -> lNum,\
-                                                       pbook -> lAutSur,\
-                                                       pbook -> lAutNam,\
-                                                       pbook -> lBooNam,\
-                                                       pbook -> lYear,\
-                                                       pbook -> lComent);
+                                                            pbook -> lAutSur,\
+                                                            pbook -> lAutNam,\
+                                                            pbook -> lBooNam,\
+                                                            pbook -> lYear,\
+                                                            pbook -> lComent);
             ++pbook;
 
     }

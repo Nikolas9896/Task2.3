@@ -5,15 +5,13 @@
 
 {
     int i;
+
     for( i = ZERO; i != KILK4; ++i )
 	
 	{
-      //Number
-        pbook->lNum = i + ONE;
-
 
      //Autor
-        printf("Please, enter autor name and surname for %d book :\n", pbook -> lNum );
+        printf("Please, enter autor name and surname :\n", pbook -> lNum );
         scanf( "%s %s", pbook -> lAutNam, pbook -> lAutSur );
         scanf( "%*c" );
 
@@ -39,6 +37,7 @@
 
       //next one
      ++pbook;
-	}
+
+    }
  return i;
 }

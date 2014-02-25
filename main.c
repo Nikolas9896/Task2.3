@@ -1,20 +1,46 @@
-//#include<stdio.h>
-//#include<string.h>
+#include <string.h>
 #include"structLibrery.h"
 #include"fooIn.h"
-#include"fooSort.h"
 #include"fooOut.h"
 
  int main()
 
 {
 
-//#include"fooIn.h"
+
 #include"structLibrery.c"
 fooIn ( pbook );
-fooSort( pbook );
+
+  int n, m, code;
+    struct Librery temp;
+    int tempNum;
+
+    for( n = ONE; n != KILK4; ++n )
+    {
+            for (m = ZERO; m != KILK4 - n; ++m )
+            {
+
+              code = strcmp( book[ m + ONE ].lAutSur, book[ m ].lAutSur );
+
+
+                     if( code < ZERO )
+
+                     {
+
+                                temp = book[ m + ONE ] ;
+                                book[ m + ONE ] = book[ m ];
+                                book[ m ] = temp;
+
+
+                    }
+
+
+            }
+
+      }
+
 fooOut( pbook );
 
-return 0;
+return ZERO;
 }
 
