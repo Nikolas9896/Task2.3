@@ -4,20 +4,20 @@
  int fooIn( struct Librery *pbook )
 
 {
-    int i;
+  unsigned  int i;
 
     for( i = ZERO; i != KILK4; ++i )
 	
 	{
 
      //Autor
-        printf("Please, enter autor name and surname :\n", pbook -> lNum );
+        printf("Please, enter autor name and surname :\n" );
         scanf( "%s %s", pbook -> lAutNam, pbook -> lAutSur );
         scanf( "%*c" );
 
 
      //Book
-      printf( "Enter book which wrote %s %s :",  pbook -> lAutNam, pbook -> lAutSur  );
+      printf( "Enter book which wrote %s %s :\n",  pbook -> lAutNam, pbook -> lAutSur  );
       scanf("%[^\n]", pbook -> lBooNam );
       scanf( "%*c" );
       printf("%s\n", pbook -> lBooNam );

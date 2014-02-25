@@ -11,7 +11,7 @@
 #include"structLibrery.c"
 fooIn ( pbook );
 
-  int n, m, code;
+  unsigned int n, m, code;
     struct Librery temp;
     int tempNum;
 
